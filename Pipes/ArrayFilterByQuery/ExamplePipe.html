@@ -1,0 +1,7 @@
+ <ul class="list-group">
+  <li 
+    *ngFor="let car of cars | arrayFilterByQuery:searchCar:'name'; let i = index;"
+    class="list-group-item">
+      <span class="list-group-index">{{ i + 1}}</span> - {{car.name}}
+  </li>
+</ul>
