@@ -1,7 +1,7 @@
-<ul>
-  <li class="pn-jobs-list__item"
+<ul class="jobs-list">
+  <li class="jobs-list__item"
     *ngFor="let job of jobsList | filterByQuery:professionQuery:professionChain | filterByQuery:locationQuery:locationPropsArray"
     >
-    <span>Some text</span>
+    <span class="jobs-list__description">Some text</span>
   </li>
 </ul>
